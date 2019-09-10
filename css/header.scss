@@ -1,0 +1,13 @@
+//bg = BackGround
+$white: #fff;
+$nav-bg: #24292e;
+$logo-font: 'Righteous', cursive;
+
+.nav-bar {
+    background-color: $nav-bg;
+    .logo {
+        font-family: $logo-font;
+        font-size: 30px;
+        color: $white;
+    }
+}
