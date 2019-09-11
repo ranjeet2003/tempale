@@ -2,12 +2,52 @@
 $white: #fff;
 $nav-bg: #24292e;
 $logo-font: 'Righteous', cursive;
-
+// Breakpoints
+$mobile: 600px;
+$tablet: 768px;
+$desktop: 992px;
+$xl-device: 1200px;
 .nav-bar {
     background-color: $nav-bg;
+    a:hover {
+        text-decoration: none;
+    }
     .logo {
         font-family: $logo-font;
         font-size: 30px;
         color: $white;
+        float: left;
+    }
+    .nav-icon {
+        width: 30px;
+        height: 30px;
+    }
+    #home {
+        height: 27px;
+    }
+    .nav-item{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #navbar {
+        transition: 0.4s;
+    }
+    #logo {
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .nav-bar {
+        .logo {
+            display: none;
+        }
+        .nav-icon {
+            width: 25px;
+            height: 25px;
+        }
+        .not-center {
+            display: none;
+        }
     }
 }

@@ -1,2 +1,12 @@
 // Style Imports
 @import "header.scss";
+* {
+    // box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+}
